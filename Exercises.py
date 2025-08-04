@@ -4,7 +4,11 @@ with open('./file.txt','r+',encoding='utf-8') as f:
 
 
 # 字典
-car = {'name':'BMW','model':'X5','price': 80000}
+cars = {'name':'BMW','model':'X5','price': 80000}
 
-print(len(car))
-print(car['price'])
+print(len(cars))
+print(cars['price'])
+
+for key, value, in cars.items():
+    print(f'{key} : {value}')
+
