@@ -10,7 +10,7 @@ def hello():
 # 渲染html文件并传参数
 @app.route('/home',methods=['GET'])
 def home_page():
-    return render_template('home.html',text='MY NAME IS SEAN')
+    return render_template('home.html',text='MY NAME IS SEAN ZHANG123')
 
 
 # 传给页面字典 后端给前端渲染时传递内容
@@ -42,4 +42,4 @@ def static_page():
     return render_template('static.html')
 
 if __name__ == '__main__':
-    app.run()
+    app.run('0.0.0.0',debug=True)

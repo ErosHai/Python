@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>template - form</h1>
+  <h2>{{ load_result.sites }}</h2>
+
+  {% for item in load_result.sites %}
+  <ul>
+    <li>{{ item.name }}</li>
+    <li>{{ item.url }}</li>
+  </ul>
+  {% endfor %}
+</body>
+</html>
